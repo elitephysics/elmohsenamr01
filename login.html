@@ -117,10 +117,10 @@ $('action').onclick=async()=>{
    const type=$('accountType').value;
    const {data,error}=await db.auth.signUp({email,password,options:{data:{phone,account_type:type,full_name:$('fullName').value.trim(),store_name:$('storeName').value.trim(),address:$('address').value.trim()}}});
    if(error) throw error;
-   if(data.session) location.href='index.html';
+   if(data.session) location.href='account.html';
    else $('msg').textContent=type==='seller'?'تم إنشاء طلب البائع. بعد تأكيد البريد، سيظهر طلبك للمدير للمراجعة.':'تم إنشاء الحساب. إذا ظهر طلب تأكيد البريد، أكّد بريدك ثم سجّل الدخول.';
   }else{
-   const {error}=await db.auth.signInWithPassword({email,password}); if(error) throw error; location.href='index.html';
+   const {error}=await db.auth.signInWithPassword({email,password}); if(error) throw error; location.href='account.html';
   }
  }catch(e){$('msg').textContent=e.message||'حدث خطأ غير متوقع. تأكد من إعداد Supabase ومفتاحه.';}
  finally{$('action').disabled=false;}
