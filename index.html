@@ -1,1 +1,220 @@
-<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>المحسن ستور</title><link rel="stylesheet" href="style.css"></head><body data-page="home"><main><div class="empty">جاري التحميل...</div></main><div id="toast" class="toast"></div><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="config.js"></script><script src="common.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>المحسن ستور</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#a00303;
+}
+
+header{
+background:#960505;
+color:white;
+padding:15px;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:15px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+}
+
+.hero{
+background:white;
+padding:60px;
+text-align:center;
+}
+
+.categories,
+.products{
+max-width:1200px;
+margin:auto;
+padding:20px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:15px;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+text-align:center;
+}
+
+.card span{
+font-size:60px;
+}
+
+button{
+background:#960505;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:8px;
+cursor:pointer;
+margin-top:10px;
+}
+
+footer{
+background:#111827;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:30px;
+}
+html{scroll-behavior:smooth;}
+</style>
+<meta name="description" content="المحسن ستور - متجر إلكتروني للتسوق وشراء المنتجات بسهولة وأمان. اكتشف المنتجات والعروض واطلب أونلاين.">
+<meta name="keywords" content="المحسن ستور, المحسن ستور مصر, متجر المحسن, متجر إلكتروني, تسوق أونلاين, شراء منتجات">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://elitephysics.github.io/elmohsenamr01/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="المحسن ستور">
+<meta property="og:title" content="المحسن ستور | متجر إلكتروني">
+<meta property="og:description" content="تسوّق بسهولة من المحسن ستور واكتشف المنتجات والعروض.">
+<meta property="og:url" content="https://elitephysics.github.io/elmohsenamr01/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="المحسن ستور | متجر إلكتروني">
+<meta name="twitter:description" content="تسوّق بسهولة من المحسن ستور واكتشف المنتجات والعروض.">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Organization",
+  "name":"المحسن ستور",
+  "url":"https://elitephysics.github.io/elmohsenamr01/",
+  "description":"متجر إلكتروني للتسوق وشراء المنتجات أونلاين.",
+  "sameAs":[]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"المحسن ستور",
+  "url":"https://elitephysics.github.io/elmohsenamr01/",
+  "potentialAction":{
+    "@type":"SearchAction",
+    "target":{
+      "@type":"EntryPoint",
+      "urlTemplate":"https://elitephysics.github.io/elmohsenamr01/?q={search_term_string}"
+    },
+    "query-input":"required name=search_term_string"
+  }
+}
+</script></head>
+
+<body>
+
+<header>
+<nav>
+<h1>المحسن ستور</h1>
+
+<ul>
+<li><a href="#home">الرئيسية</a></li>
+<li><a href="#products">المنتجات</a></li>
+<li><a href="#categories">التصنيفات</a></li>
+<li><a href="#cart">السلة</a></li>
+<li><a href="#account">حسابي</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<h2>مرحباً بك في المحسن ستور</h2>
+<p>متجر إلكتروني متعدد الاستخدامات لبيع أي نوع من المنتجات.</p>
+</section>
+
+<section class="categories" id="categories">
+<h2>التصنيفات</h2>
+
+<div class="grid">
+<div class="card">📱 إلكترونيات</div>
+<div class="card">🛒 بقالة</div>
+<div class="card">👕 ملابس</div>
+<div class="card">🧴 عطور</div>
+</div>
+</section>
+
+<section class="products" id="products">
+<h2>المنتجات المميزة</h2>
+
+<div class="grid">
+
+<div class="card">
+<span>📱</span>
+<h3>هاتف ذكي</h3>
+<p>2999 ج.م</p>
+<button>إضافة للسلة</button>
+</div>
+
+<div class="card">
+<span>💻</span>
+<h3>لابتوب</h3>
+<p>14999 ج.م</p>
+<button>إضافة للسلة</button>
+</div>
+
+<div class="card">
+<span>🎧</span>
+<h3>سماعات</h3>
+<p>799 ج.م</p>
+<button>إضافة للسلة</button>
+</div>
+
+<div class="card">
+<span>🛒</span>
+<h3>مواد غذائية</h3>
+<p>199 ج.م</p>
+<button>إضافة للسلة</button>
+</div>
+
+</div>
+</section>
+
+
+<section class="categories" id="cart">
+<h2>السلة</h2>
+<div class="card">
+<p>السلة فارغة حاليًا.</p>
+</div>
+</section>
+
+<section class="categories" id="account">
+<h2>حسابي</h2>
+<div class="card">
+<p>مرحباً بك في حسابك.</p>
+</div>
+</section>
+
+<footer>
+© المحسن ستور 2026
+</footer>
+
+</body>
+</html>
